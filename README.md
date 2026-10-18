@@ -1,3 +1,3 @@
 # DIFFNOTES
 
-# CLI-tool for structures Diff descriptions
+# CLI-tool for structured Diff descriptions
