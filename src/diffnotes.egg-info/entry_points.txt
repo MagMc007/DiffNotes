@@ -1,0 +1,2 @@
+[console_scripts]
+diffnotes = prgen.cli:main

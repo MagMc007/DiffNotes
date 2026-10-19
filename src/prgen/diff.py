@@ -3,7 +3,7 @@
 import re
 import subprocess
 
-from errors import EmptyDiffError, InputError
+from .errors import EmptyDiffError, InputError
 
 # Lockfiles: changes here are noise for a PR description.
 LOCKFILE_PATTERNS = (

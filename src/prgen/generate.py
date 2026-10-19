@@ -2,9 +2,9 @@
 
 from pydantic import ValidationError
 
-from errors import GenerationFailed
+from .errors import GenerationFailed
 from .providers.openrouter import OpenRouterProvider
-from schema import PRDescription
+from .schema import PRDescription
 
 
 def generate_pr_description(
