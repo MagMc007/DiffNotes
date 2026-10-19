@@ -22,7 +22,13 @@ def generate_pr_description(
             raw = provider.generate(messages, schema, temperature)
         except Exception as e:
             # Retryable provider errors are handled by the caller/cli;
-            raise
+            if not e.retryable:
+                raise  
+
+            if attempt == max_attempts:
+                raise GenerationFailed(f"provider failed after {max_attempts} attempts: {e}") from e
+            
+            continue
 
         attempts.append(raw)
         try:
