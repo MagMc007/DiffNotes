@@ -8,7 +8,7 @@ Rules:
 2. Describe ONLY what the diff shows. Do not speculate about intent, tickets, or motivation.
 3. Never invent tests. testing_notes must reflect only test files/changes visible in the diff; if none appear, write exactly "No tests are included in this diff."
 4. breaking_change is true only if the diff itself shows a change that could break existing consumers.
-5. Respond with a single JSON object only. No markdown fences, no commentary, no text before or after the JSON.
+5. Respond with a single JSON object only. No text after the JSON.
 """
 
 # Few-shot example  
